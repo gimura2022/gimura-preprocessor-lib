@@ -39,6 +39,10 @@ impl CodeSource {
         for entry in glob::glob(format!("{}/**/*", path).as_str()).unwrap() {
             let entry = &entry.unwrap();
 
+            if !entry.is_file() {
+                continue;
+            }
+
             let name = entry.file_name().unwrap().to_str().unwrap().to_string().replace("/", "__");
             let source = fs::read_to_string(entry.as_path()).unwrap();
 
