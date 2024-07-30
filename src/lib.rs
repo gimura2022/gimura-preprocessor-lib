@@ -9,13 +9,15 @@ pub mod prelude {
 
 #[derive(Debug, Clone)]
 pub struct PreprocessorOptions {
-    pub start_operator: String
+    pub start_operator: String,
+    pub defines: HashMap<String, String>,
 }
 
 impl Default for PreprocessorOptions {
     fn default() -> Self {
         Self {
-            start_operator: "//!".to_string()
+            start_operator: "//!".to_string(),
+            defines: HashMap::new(),
         }
     }
 }
@@ -99,7 +101,7 @@ impl Preporcessor {
         Self {
             preprocessor_options: preprocessor_options.clone(),
             sources: HashMap::new(),
-            defines: HashMap::new(),
+            defines: preprocessor_options.defines,
             ifs: Vec::new(),
         }
     }
