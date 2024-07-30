@@ -1,12 +1,12 @@
 # Gimura Preprocessor Lib
-*A small library for file peprocessing.*
+*A small library for file preprocessing.*
 
 ## Features
 - commands from the C preprocessor (`include`, `define`, `ifdef`, ...)
 - work with any files (shaders, configs, and other)
 
 ## Installing
-Run `cargo add gimura-preprocessor-lib` or add or add to yours `Cargo.toml` line `gimura-preprocessor-lib = "0.1.0"`.
+Run `cargo add gimura-preprocessor-lib` or add to yours `Cargo.toml` line `gimura-preprocessor-lib = "0.1.0"`.
 
 ## Examples
 Examples of using the library can be found in the [examples](/examples/) folder or by cloning the repository and running the command `cargo run --example example_name`.
