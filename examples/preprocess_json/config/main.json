@@ -1,0 +1,8 @@
+{
+    "version": "1.0.0",
+
+    //! define USER_NAME "name"
+    //! define USER_ID "0"
+
+    //! include "main" "user_config.json"
+}

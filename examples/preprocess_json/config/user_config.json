@@ -1,0 +1,11 @@
+//! ifndef USER_NAME
+//! error "user name not found!"
+//! endif
+
+//! ifndef USER_ID
+//! warn "user id not found! installed by default."
+//! define USER_ID "0"
+//! endif
+
+"user_name": "USER_NAME",
+"user_id": USER_ID
